@@ -39,7 +39,6 @@
       top: 30%;
       left: 30%;
       width: 40%;
-
       background: rgba(0, 0, 0, 0.7);
       padding: 25px;
       border-radius: 3px;
@@ -52,20 +51,46 @@
     h3,
     h4,
     h5,
-    p {
+    p,
+    a {
       font-family: var(--main-font);
-      color: var(--text-color);
     }
     .hero-heading {
       font-size: 75px;
       color: white;
     }
-    .hero-heading-small {
+    .hero-heading-small,
+    a {
       color: white;
+    }
+    nav {
+      background: rgba(0, 0, 0, 0.7);
     }
   </style>
 </head>
 <body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+    <div class="container-fluid">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav mx-auto">
+          <a class="nav-link" href="#learn">Learn</a>
+          <a class="nav-link" href="#watch">Watch</a>
+          <a class="nav-link" href="#dance">Dance</a>
+        </div>
+      </div>
+    </div>
+  </nav>
   <div class="hero" id="hero">
     <div class="head-image position-relative">
       <img
@@ -80,4 +105,28 @@
       <h1 class="hero-heading">Swing</h1>
     </div>
   </div>
+  <div id="learn">
+    <div class="row">
+      <div class="col-lg">
+        <h1>What is swing dance?</h1>
+        <p>
+          Swing dance is a group of social dances that developed with the swing
+          style of jazz music in the 1920s–1940s. Hundreds of styles of swing
+          dancing were developed; those that have survived beyond that era
+          include Lindy Hop, Balboa, Collegiate Shag, and Charleston. Today, the
+          best-known of these dances is the Lindy Hop, which originated in
+          Harlem in the early 1930s
+        </p>
+      </div>
+      <div class="col-lg">
+        <iframe
+          height="400"
+          src="https://www.youtube.com/watch?v=YFpU5ypLrKQ"
+          autoplay
+        ></iframe>
+      </div>
+    </div>
+  </div>
+  <div id="watch"></div>
+  <div id="dance"></div>
 </body>
