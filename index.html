@@ -43,7 +43,8 @@
       padding: 25px;
       border-radius: 3px;
     }
-    h1 {
+    h1,
+    h2 {
       font-family: var(--headings-font);
       color: var(--text-color);
     }
@@ -52,7 +53,8 @@
     h4,
     h5,
     p,
-    a {
+    a,
+    li {
       font-family: var(--main-font);
     }
     .hero-heading {
@@ -60,11 +62,14 @@
       color: white;
     }
     .hero-heading-small,
-    a {
+    .nav-link {
       color: white;
     }
     nav {
       background: rgba(0, 0, 0, 0.7);
+    }
+    li {
+      list-style: none;
     }
   </style>
 </head>
@@ -105,28 +110,240 @@
       <h1 class="hero-heading">Swing</h1>
     </div>
   </div>
-  <div id="learn">
+  <div id="learn" class="learn">
     <div class="row">
-      <div class="col-lg">
+      <div class="col-lg m-5 my-auto">
         <h1>What is swing dance?</h1>
         <p>
-          Swing dance is a group of social dances that developed with the swing
-          style of jazz music in the 1920s–1940s. Hundreds of styles of swing
-          dancing were developed; those that have survived beyond that era
-          include Lindy Hop, Balboa, Collegiate Shag, and Charleston. Today, the
-          best-known of these dances is the Lindy Hop, which originated in
-          Harlem in the early 1930s
+          <a href="https://en.wikipedia.org/wiki/Swing_(dance)" target="_blank"
+            >Swing dance</a
+          >
+          is a group of social dances that developed with the swing style of
+          jazz music in the 1920s–1940s. Hundreds of styles of swing dancing
+          were developed; those that have survived beyond that era include Lindy
+          Hop, Balboa, Collegiate Shag, and Charleston. Today, the best-known of
+          these dances is the Lindy Hop, which originated in Harlem in the early
+          1930s
+        </p>
+        <p>
+          Swing dancing was most popular in the 1930s and 1940s, but it still
+          continues today. Dance moves have evolved with the music. Swing
+          dancing styles are the foundation of many other dance styles including
+          disco, country line dancing, and hip hop. Swing dancing clubs and
+          contests are still held around the world
         </p>
       </div>
-      <div class="col-lg">
+      <div class="col-lg m-5 text-center">
         <iframe
-          height="400"
-          src="https://www.youtube.com/watch?v=YFpU5ypLrKQ"
-          autoplay
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/YFpU5ypLrKQ"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
         ></iframe>
+        <p>
+          <a
+            href="https://en.wikipedia.org/wiki/Frankie_Manning"
+            target="_blank"
+            >Frankie Manning</a
+          >
+          was an American dancer, instructor, and choreographer. Manning is
+          considered one of the founders of Lindy Hop, an energetic form of the
+          jazz dance style known as swing.
+        </p>
       </div>
     </div>
   </div>
-  <div id="watch"></div>
-  <div id="dance"></div>
+  <div id="watch" class="watch">
+    <h1 class="text-center">See some swing</h1>
+    <div class="row">
+      <div class="col-lg m-5 text-center">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/Qzbli441FQI"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+        <p>
+          Lindy Hop performance at the
+          <a href="https://www.rockthatswing.com/rtsf?lang=en" target="_blank"
+            >Rock That Swing Festival</a
+          >
+          in Munich in 2023
+        </p>
+      </div>
+      <div class="col-lg m-5 text-center">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/XAGorQO8kAc"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+        <p>Balboa showcase at Rock That Swing 2017</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg m-5 text-center">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/q0U_rxtwJrI"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+        <p>The Charleston on BBC's <em>Strictly Come Dancing</em>, 2021</p>
+      </div>
+      <div class="col-lg m-5 text-center">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/BiCeAlJIgic"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+        <p>Collegiate Shag in Barcelona, 2023</p>
+      </div>
+    </div>
+  </div>
+  <div id="dance" class="dance">
+    <h1 class="text-center">Want to give swing dance a try?</h1>
+    <h4 class="text-center mx-5">
+      You can find lessons, social dances, and events in many major cities
+      around the world - whether at dedicated swing dance studios, or hosted by
+      swing dance groups in different locations. Below is a sample list - if
+      none of these are near you, simply search "(your city) + swing dance" to
+      find a studio, group, or event in your area!
+    </h4>
+    <div class="row text-center">
+      <div class="col-lg m-3">
+        <h2>Asia</h2>
+        <ul>
+          <li>
+            <a href="https://www.facebook.com/swingpop0701/" target="_blank"
+              >Swing Pop</a
+            >
+            in Seoul, South Korea
+          </li>
+          <li>
+            <a href="https://www.thehopbkk.com/" target="_blank">The Hop</a> in
+            Bangkok, Thailand
+          </li>
+          <li>
+            <a href="https://hongkongswings.com/" target="_blank"
+              >Hong Kong Swings</a
+            >
+            in Hong Kong
+          </li>
+        </ul>
+      </div>
+      <div class="col-lg m-3">
+        <h2>Europe</h2>
+        <ul>
+          <li>
+            <a href="http://www.corsiswingroma.it/" target="_blank"
+              >Feel That Swing</a
+            >
+            in Rome, Italy
+          </li>
+          <li>
+            <a href="https://www.herrang.com/" target="_blank"
+              >Herräng Dance Camp</a
+            >
+            in Herräng, Sweden
+          </li>
+          <li>
+            <a href="https://swingparadise.lt/" target="_blank"
+              >Swing Paradise</a
+            >
+            in Vilnius, Lithuania
+          </li>
+        </ul>
+      </div>
+      <div class="col-lg m-3">
+        <h2>Americas</h2>
+        <ul>
+          <li>
+            <a href="https://www.redhotswing.com/" target="_blank"
+              >Red Hot Swing</a
+            >
+            in Victoria, Canada
+          </li>
+          <li>
+            <a href="https://www.dancesportdupont.com/" target="_blank"
+              >DanceSport Dupont</a
+            >
+            in Washington DC, USA
+          </li>
+          <li>
+            <a href="https://store.swingcity.com.ar/" target="_blank"
+              >Swing City</a
+            >
+            in Buenos Aires, Argentina
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="row text-center">
+      <div class="col-lg m-3">
+        <h2>Africa</h2>
+        <ul>
+          <li>
+            <a href="https://masx.org/the-afro-swing-exchange/" target="_blank"
+              >The Mozambique Afro Swing Exchange</a
+            >
+            in Maputo, Mozambique
+          </li>
+          <li>
+            <a
+              href="https://www.facebook.com/p/Vintage-Swing-Dance-Club-SA-100085229932126/?paipv=0&eav=AfbMrHpCMH81QJdFKuSwozZiVq1pBemoLVkh7oWjPowDd9frLhAp7VbfdwggSzfYSrs&_rdr"
+              target="_blank"
+              >Vintage Swing Dance Club</a
+            >
+            in Johannesburg, South Africa
+          </li>
+          <li>
+            <a href="https://www.capetownswing.co.za/" target="_blank"
+              >Cape Town Swing</a
+            >
+            in Cape Town, South Africa
+          </li>
+        </ul>
+      </div>
+      <div class="col-lg m-3">
+        <h2>Oceania</h2>
+        <ul>
+          <li>
+            <a href="https://www.swingoutcentral.co.nz/" target="_blank"
+              >Swing Out Central</a
+            >
+            in Auckland, New Zealand
+          </li>
+          <li>
+            <a href="https://www.swingintahiti.com/" target="_blank"
+              >Swing In Tahiti</a
+            >
+            in Faa'a, French Polynesia
+          </li>
+          <li>
+            <a href="https://www.sydneyswingkatz.com.au/" target="_blank"
+              >Sydney Swing Katz</a
+            >
+            in Sydney, Australia
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
 </body>
