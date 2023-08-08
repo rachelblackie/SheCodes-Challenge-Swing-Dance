@@ -77,6 +77,72 @@
     .row {
       --bs-gutter-x: 0;
     }
+    .learn,
+    .watch,
+    .dance {
+      scroll-margin-top: 100px;
+    }
+    .container {
+      position: relative;
+      text-align: center;
+    }
+    .centered {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: rgba(0, 0, 0, 0.8);
+      padding: 10px;
+      width: 85%;
+      border-radius: 4px;
+      color: white;
+    }
+    .map {
+      max-height: 400px;
+    }
+    .dark-map {
+      opacity: 0.9;
+    }
+    .dance-heading,
+    .dance-link {
+      color: white;
+    }
+    .dance-link:hover {
+      color: #0d6efd;
+    }
+    .hide-for-fade-in {
+      opacity: 0%;
+      -webkit-transition: opacity 0.5s;
+      -o-transition: opacity 0.5s;
+      transition: opacity 0.5s;
+    }
+    .hide-for-fade-in-two {
+      opacity: 0%;
+      -webkit-transition: opacity 1.5s;
+      -o-transition: opacity 1.5s;
+      transition: opacity 1.5s;
+    }
+    .hide-for-fade-in-three {
+      opacity: 0%;
+      -webkit-transition: opacity 2.5s;
+      -o-transition: opacity 2.5s;
+      transition: opacity 2.5s;
+    }
+    .hide-for-fade-in-four {
+      opacity: 0%;
+      -webkit-transition: opacity 3.5s;
+      -o-transition: opacity 3.5s;
+      transition: opacity 3.5s;
+    }
+    .hide-for-fade-in-five {
+      opacity: 0%;
+      -webkit-transition: opacity 4.5s;
+      -o-transition: opacity 4.5s;
+      transition: opacity 4.5s;
+    }
+    .fade-in {
+      opacity: 100%;
+    }
   </style>
 </head>
 <body>
@@ -232,123 +298,210 @@
       none of these are near you, simply search "(your city) + swing dance" to
       find a studio, group, or event in your area!
     </h4>
-    <div class="row text-center">
-      <div class="col-lg m-3">
-        <h2>Asia</h2>
-        <ul>
-          <li>
-            <a href="https://www.facebook.com/swingpop0701/" target="_blank"
-              >Swing Pop</a
-            >
-            in Seoul, South Korea
-          </li>
-          <li>
-            <a href="https://www.thehopbkk.com/" target="_blank">The Hop</a> in
-            Bangkok, Thailand
-          </li>
-          <li>
-            <a href="https://hongkongswings.com/" target="_blank"
-              >Hong Kong Swings</a
-            >
-            in Hong Kong
-          </li>
-        </ul>
+    <div class="row text-center m-5">
+      <div class="col-lg m-3 my-auto">
+        <div class="container transition">
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/092/602/original/asia_map_silhouette.PNG?1691520635"
+            class="img-fluid map"
+          />
+
+          <div class="centered">
+            <h2 class="dance-heading">Asia</h2>
+            <ul>
+              <li>
+                <a
+                  href="https://www.facebook.com/swingpop0701/"
+                  target="_blank"
+                  class="dance-link"
+                  >Swing Pop</a
+                >
+                in Seoul, South Korea
+              </li>
+              <li>
+                <a
+                  href="https://www.thehopbkk.com/"
+                  target="_blank"
+                  class="dance-link"
+                  >The Hop</a
+                >
+                in Bangkok, Thailand
+              </li>
+              <li>
+                <a
+                  href="https://hongkongswings.com/"
+                  target="_blank"
+                  class="dance-link"
+                  >Hong Kong Swings</a
+                >
+                in Hong Kong
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
-      <div class="col-lg m-3">
-        <h2>Europe</h2>
-        <ul>
-          <li>
-            <a href="http://www.corsiswingroma.it/" target="_blank"
-              >Feel That Swing</a
-            >
-            in Rome, Italy
-          </li>
-          <li>
-            <a href="https://www.herrang.com/" target="_blank"
-              >Herräng Dance Camp</a
-            >
-            in Herräng, Sweden
-          </li>
-          <li>
-            <a href="https://swingparadise.lt/" target="_blank"
-              >Swing Paradise</a
-            >
-            in Vilnius, Lithuania
-          </li>
-        </ul>
+      <div class="col-lg m-3 my-auto">
+        <div class="container transition-two">
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/092/603/original/europe_map_silhouette.PNG?1691520642"
+            class="img-fluid map"
+          />
+          <div class="centered">
+            <h2 class="dance-heading">Europe</h2>
+            <ul>
+              <li>
+                <a
+                  href="http://www.corsiswingroma.it/"
+                  target="_blank"
+                  class="dance-link"
+                  >Feel That Swing</a
+                >
+                in Rome, Italy
+              </li>
+              <li>
+                <a
+                  href="https://www.herrang.com/"
+                  target="_blank"
+                  class="dance-link"
+                  >Herräng Dance Camp</a
+                >
+                in Herräng, Sweden
+              </li>
+              <li>
+                <a
+                  href="https://swingparadise.lt/"
+                  target="_blank"
+                  class="dance-link"
+                  >Swing Paradise</a
+                >
+                in Vilnius, Lithuania
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
-      <div class="col-lg m-3">
-        <h2>Americas</h2>
-        <ul>
-          <li>
-            <a href="https://www.redhotswing.com/" target="_blank"
-              >Red Hot Swing</a
+      <div class="col-lg m-3 my-auto">
+        <div class="container transition-three">
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/092/606/original/americas_map_silhouette.PNG?1691520661"
+            class="img-fluid map dark-map"
+          />
+          <div class="centered">
             >
-            in Victoria, Canada
-          </li>
-          <li>
-            <a href="https://www.dancesportdupont.com/" target="_blank"
-              >DanceSport Dupont</a
-            >
-            in Washington DC, USA
-          </li>
-          <li>
-            <a href="https://store.swingcity.com.ar/" target="_blank"
-              >Swing City</a
-            >
-            in Buenos Aires, Argentina
-          </li>
-        </ul>
+            <h2 class="dance-heading">Americas</h2>
+            <ul>
+              <li>
+                <a
+                  href="https://www.redhotswing.com/"
+                  target="_blank"
+                  class="dance-link"
+                  >Red Hot Swing</a
+                >
+                in Victoria, Canada
+              </li>
+              <li>
+                <a
+                  href="https://www.dancesportdupont.com/"
+                  target="_blank"
+                  class="dance-link"
+                  >DanceSport Dupont</a
+                >
+                in Washington DC, USA
+              </li>
+              <li>
+                <a
+                  href="https://store.swingcity.com.ar/"
+                  target="_blank"
+                  class="dance-link"
+                  >Swing City</a
+                >
+                in Buenos Aires, Argentina
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="row text-center">
+    <div class="row text-center m-5">
       <div class="col-lg m-3">
-        <h2>Africa</h2>
-        <ul>
-          <li>
-            <a href="https://masx.org/the-afro-swing-exchange/" target="_blank"
-              >The Mozambique Afro Swing Exchange</a
-            >
-            in Maputo, Mozambique
-          </li>
-          <li>
-            <a
-              href="https://www.facebook.com/p/Vintage-Swing-Dance-Club-SA-100085229932126/?paipv=0&eav=AfbMrHpCMH81QJdFKuSwozZiVq1pBemoLVkh7oWjPowDd9frLhAp7VbfdwggSzfYSrs&_rdr"
-              target="_blank"
-              >Vintage Swing Dance Club</a
-            >
-            in Johannesburg, South Africa
-          </li>
-          <li>
-            <a href="https://www.capetownswing.co.za/" target="_blank"
-              >Cape Town Swing</a
-            >
-            in Cape Town, South Africa
-          </li>
-        </ul>
+        <div class="container transition-four">
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/092/604/original/africa_map_silhouette.PNG?1691520648"
+            class="img-fluid map dark-map"
+          />
+          <div class="centered">
+            <h2 class="dance-heading">Africa</h2>
+            <ul>
+              <li>
+                <a
+                  href="https://masx.org/the-afro-swing-exchange/"
+                  target="_blank"
+                  class="dance-link"
+                  >The Mozambique Afro Swing Exchange</a
+                >
+                in Maputo, Mozambique
+              </li>
+              <li>
+                <a
+                  href="https://www.facebook.com/p/Vintage-Swing-Dance-Club-SA-100085229932126/?paipv=0&eav=AfbMrHpCMH81QJdFKuSwozZiVq1pBemoLVkh7oWjPowDd9frLhAp7VbfdwggSzfYSrs&_rdr"
+                  target="_blank"
+                  class="dance-link"
+                  >Vintage Swing Dance Club</a
+                >
+                in Johannesburg, South Africa
+              </li>
+              <li>
+                <a
+                  href="https://www.capetownswing.co.za/"
+                  target="_blank"
+                  class="dance-link"
+                  >Cape Town Swing</a
+                >
+                in Cape Town, South Africa
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
       <div class="col-lg m-3">
-        <h2>Oceania</h2>
-        <ul>
-          <li>
-            <a href="https://www.swingoutcentral.co.nz/" target="_blank"
-              >Swing Out Central</a
-            >
-            in Auckland, New Zealand
-          </li>
-          <li>
-            <a href="https://www.swingintahiti.com/" target="_blank"
-              >Swing In Tahiti</a
-            >
-            in Faa'a, French Polynesia
-          </li>
-          <li>
-            <a href="https://www.sydneyswingkatz.com.au/" target="_blank"
-              >Sydney Swing Katz</a
-            >
-            in Sydney, Australia
-          </li>
-        </ul>
+        <div class="container transition-five">
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/092/605/original/oceania_map_silhouette.PNG?1691520654"
+            class="img-fluid map"
+          />
+          <div class="centered">
+            <h2 class="dance-heading">Oceania</h2>
+            <ul>
+              <li>
+                <a
+                  href="https://www.swingoutcentral.co.nz/"
+                  target="_blank"
+                  class="dance-link"
+                  >Swing Out Central</a
+                >
+                in Auckland, New Zealand
+              </li>
+              <li>
+                <a
+                  href="https://www.swingintahiti.com/"
+                  target="_blank"
+                  class="dance-link"
+                  >Swing In Tahiti</a
+                >
+                in Faa'a, French Polynesia
+              </li>
+              <li>
+                <a
+                  href="https://www.sydneyswingkatz.com.au/"
+                  target="_blank"
+                  class="dance-link"
+                  >Sydney Swing Katz</a
+                >
+                in Sydney, Australia
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -375,4 +528,66 @@
       ></a>
     </div>
   </div>
+  <script>
+    const transition = document.querySelectorAll(".transition");
+    transition.forEach(function (transition) {
+      transition.classList.add("hide-for-fade-in");
+    });
+    transition.forEach(function (transition) {
+      window.addEventListener("scroll", function () {
+        let scroll = window.scrollY;
+        if (scroll > transition.offsetTop - 500) {
+          transition.classList.add("fade-in");
+        }
+      });
+    });
+    const transitionTwo = document.querySelectorAll(".transition-two");
+    transitionTwo.forEach(function (transitionTwo) {
+      transitionTwo.classList.add("hide-for-fade-in-two");
+    });
+    transitionTwo.forEach(function (transitionTwo) {
+      window.addEventListener("scroll", function () {
+        let scroll = window.scrollY;
+        if (scroll > transitionTwo.offsetTop - 500) {
+          transitionTwo.classList.add("fade-in");
+        }
+      });
+    });
+    const transitionThree = document.querySelectorAll(".transition-three");
+    transitionThree.forEach(function (transitionThree) {
+      transitionThree.classList.add("hide-for-fade-in-three");
+    });
+    transitionThree.forEach(function (transitionThree) {
+      window.addEventListener("scroll", function () {
+        let scroll = window.scrollY;
+        if (scroll > transitionThree.offsetTop - 500) {
+          transitionThree.classList.add("fade-in");
+        }
+      });
+    });
+    const transitionFour = document.querySelectorAll(".transition-four");
+    transitionFour.forEach(function (transitionFour) {
+      transitionFour.classList.add("hide-for-fade-in-four");
+    });
+    transitionFour.forEach(function (transitionFour) {
+      window.addEventListener("scroll", function () {
+        let scroll = window.scrollY;
+        if (scroll > transitionFour.offsetTop - 500) {
+          transitionFour.classList.add("fade-in");
+        }
+      });
+    });
+    const transitionFive = document.querySelectorAll(".transition-five");
+    transitionFive.forEach(function (transitionFive) {
+      transitionFive.classList.add("hide-for-fade-in-five");
+    });
+    transitionFive.forEach(function (transitionFive) {
+      window.addEventListener("scroll", function () {
+        let scroll = window.scrollY;
+        if (scroll > transitionFive.offsetTop - 500) {
+          transitionFive.classList.add("fade-in");
+        }
+      });
+    });
+  </script>
 </body>
